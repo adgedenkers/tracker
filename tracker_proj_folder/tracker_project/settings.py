@@ -25,6 +25,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 client_id = env('CLIENT_ID')
 client_secret = env('CLIENT_SECRET')
 access_type = env('ACCESS_TYPE')
+secret_key = env('SECRET_KEY')
 
 
 
@@ -103,7 +104,7 @@ ROOT_URLCONF = 'tracker_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'tracker_app/templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'tracker_app\\templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
